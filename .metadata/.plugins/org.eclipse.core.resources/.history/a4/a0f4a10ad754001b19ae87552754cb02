@@ -1,0 +1,18 @@
+package br.senai.sp.jandira;
+
+import br.senai.sp.jandira.model.Conta;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+	Conta c1;
+	Conta c2;
+	
+	c1 = new Conta();
+	c2 = new Conta();
+	
+	System.out.println(c1);
+	}
+
+}

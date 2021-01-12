@@ -1,0 +1,35 @@
+package br.senai.sp.jandira;
+
+import br.senai.sp.jandira.model.Conta;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+	Conta contaAnaMaria;
+	Conta contaPedro;
+	
+	contaAnaMaria = new Conta();
+	contaPedro = new Conta();
+	
+	//** Conta da Ana Maria
+	contaAnaMaria.numero = "111-0";
+	contaAnaMaria.titular = "Ana Maria Braga";
+	contaAnaMaria.tipo = "corrente";
+	contaAnaMaria.saldo = 2000.0;
+	contaAnaMaria.ativa= true;
+	
+	//** Conta do Pedro
+	contaPedro.numero="222-0";
+	contaPedro.titular="Pedro Cabral";
+	contaPedro.tipo="Poupança";
+	contaPedro.saldo=1500.0;
+	contaPedro.ativa= true;
+	
+	System.out.println("nome: " + contaAnaMaria.titular+ "\nSaldo: " +contaAnaMaria.saldo);
+	System.out.println("------------------------------------");
+	System.out.println("nome: " + contaPedro.titular+ "\nSaldo: " +contaPedro.saldo);
+	
+}
+	
+}
